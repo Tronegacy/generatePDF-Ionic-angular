@@ -1,0 +1,28 @@
+{
+  "invoiceNo": "123",
+  "createdAt": "Nov 3, 2022 3:49 PM",
+  "address": "quận Bình Thạnh, Tp.HCM",
+  "username": "Eric Ngo",
+  "paymentMethod": "Bank",
+  "paymentId": "1123",
+  "items": [
+    {
+      "name": "Apple",
+      "price": 12,
+      "qty": 10,
+      "currency": "$"
+    },
+    {
+      "name": "Banana",
+      "price": 18,
+      "qty": 20,
+      "currency": "$"
+    },
+    {
+      "name": "Orange",
+      "price": 25,
+      "qty": 5,
+      "currency": "$"
+    }
+  ]
+}

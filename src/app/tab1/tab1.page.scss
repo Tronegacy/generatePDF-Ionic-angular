@@ -1,0 +1,13 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+.buttonPDF {
+  text-align: center;
+  width: 50%; 
+  background-color: powderblue; 
+  border-style: solid; 
+}
+
+.buttonPDF:hover {
+  background-color: #ffd534; 
+}

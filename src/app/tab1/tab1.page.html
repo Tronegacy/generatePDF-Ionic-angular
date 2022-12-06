@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Tab 1
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- <ion-app>
+    <ion-router-outlet id="htmlData"> -->
+
+      <div>
+        <div id="content" #content style="width: auto; height: auto; overflow: scroll; margin-bottom: 20px; justify-content: center;">
+          <div style="display: flex; margin-left: 2%; margin-right: 2%; margin-top: 25px;">
+            <div style="display: flex-col; height: 106px; width: 30%; background-color: powderblue; ">
+            LOGO
+            </div>
+            <div style="display: flex-col; margin-left: 5%; text-align: right; width: 70%;">
+            <h5>Invoice {{invoiceNo}}</h5>
+            <h5>Created: {{createdAt}}</h5>
+            </div>
+          </div>
+        
+          <div style="display: flex; margin-bottom: 20px;">
+            <div style="display: flex-col; margin-left: 5%; text-align: left;">
+              <h5>Address: {{address}}</h5>
+              <h5>Username: {{username}}</h5>
+            </div>
+          </div>
+        
+          <div style="margin: auto; width: 90%; border: 3px solid green; padding: 10px;">
+            <table style="border-collapse: collapse; width: 100%; text-align: center;">
+              <tr style="height: 40px;">
+                <th style="width: 50%;">Payment Method</th>
+                <th style="width: 50%;">Payment ID</th>
+              </tr>
+              <tr style="height: 40px;">
+                <td style="width: 50%;">{{paymentMethod}}</td>
+                <td style="width: 50%;">{{paymentId}}</td>
+              </tr>
+            </table>
+          </div>
+        
+          <div style="margin: auto; width: 90%; border: 3px solid green; padding: 10px; margin-top: 20px;">
+            <table style="border-collapse: collapse; width: 100%;">
+        
+              <thead>
+                <tr style="height: 40px;">
+                  <th style="width: 20%; text-align: left;">Items</th>
+                  <th style="width: 20%; text-align: right;">Quantity</th>
+                  <th style="width: 20%; text-align: right;">Price</th>
+                  <th style="width: 20%; text-align: right;">Total</th>
+                </tr>
+              </thead>
+        
+              <tbody>
+                <tr *ngFor="let item of items" style="height: 40px;">
+                  <td style="width: 20%; text-align: left;">{{item.name}}</td>
+                  <td style="width: 20%; text-align: right;">{{item.qty}}</td>
+                  <td style="width: 20%; text-align: right;">{{item.currency}} {{item.price}}</td>
+                  <td style="width: 20%; text-align: right;">{{item.currency}} {{item.qty * item.price}}</td>
+                </tr>
+                <tr style="height: 40px;">
+                  <td style="width: 20%; text-align: left;">Total: </td>
+                  <td style="width: 20%; text-align: right;"></td>
+                  <td style="width: 20%; text-align: right;"></td>
+                  <td style="width: 20%; text-align: right;">{{total()}}</td>
+                </tr>
+              </tbody>
+        
+            </table>
+          </div>
+        </div>
+   
+        <div style="display: flex; justify-content: center; margin-bottom: 200px;">
+          <button type="button" class="buttonPDF" (click)="openPDF(items)">
+            <h5>Export to PDF</h5>
+          </button>
+        </div>
+      </div>
+
+     
+      
+       
+    <!-- </ion-router-outlet>
+  </ion-app> -->
+  
+
+</ion-content>
